@@ -1,0 +1,101 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayhan's English Academy | IELTS & Spoken English</title>\n<!-- Single-file website: put banner image 002.jpg, logo 001.png, gallery photos and videos beside this HTML file. -->
+<style>
+:root{--navy:#091747;--blue:#087bd1;--yellow:#ffd72e;--ink:#10245f;--muted:#607095;--paper:#f4f7ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper)}
+.topline{background:#087bd1;color:#fff;text-align:center;padding:9px 14px;font-size:13px}
+.notice{background:#132464;color:#fff;text-align:center;padding:9px;font-size:13px}
+header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 4px 22px #06174612}
+.nav{max-width:1180px;margin:auto;min-height:78px;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:900;font-size:clamp(18px,2.2vw,26px)}
+.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(140deg,#1b54c8,#081641);display:grid;place-items:center;color:#fff;box-shadow:0 5px 14px #13398c30;overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:cover}.logo .fallback{font-size:24px}
+nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}nav a{padding:12px 13px;border-radius:12px;text-decoration:none;color:var(--ink);font-size:13px;font-weight:800;transition:.2s}nav a:hover{background:#edf3ff;transform:translateY(-1px)}nav .wa{background:#16b968;color:#fff}
+.hero{background:radial-gradient(ellipse at 85% 20%,#193a85 0%,transparent 35%),linear-gradient(125deg,#06123a,#101f59);color:#fff;position:relative;overflow:hidden}
+.hero-inner{max-width:1180px;min-height:100vh;margin:auto;padding:64px 22px 82px;display:flex;align-items:center;gap:35px;position:relative;z-index:1}.hero{min-height:100vh;background-image:linear-gradient(90deg,rgba(5,16,54,.94) 0%,rgba(5,16,54,.78) 52%,rgba(5,16,54,.30) 100%),url('002.jpg');background-size:cover;background-position:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:#14224f;padding:10px 15px;border-radius:99px;font-size:13px;font-weight:900}
+h1{font-size:clamp(38px,5vw,62px);line-height:1.02;letter-spacing:-1.8px;margin:22px 0 18px;font-weight:950}h1 span{display:block;color:var(--yellow);margin-top:5px}
+.hero p{color:#e3eaff;line-height:1.8;font-size:16px;max-width:570px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{border:0;display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:14px 19px;border-radius:12px;font-weight:900;text-decoration:none;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-red{background:#ef233c;color:#fff;box-shadow:0 5px 0 #bd1028}.btn-outline{border:1px solid #aab9ec;color:#fff;background:#ffffff10}
+.hero-photo{display:none}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}.photo-placeholder{text-align:center;padding:25px;color:#dce6ff;line-height:1.7}.photo-placeholder strong{display:block;font-size:23px;color:#fff;margin-bottom:8px}
+.float-card{position:absolute;left:20px;bottom:20px;background:#fff;color:#12245a;padding:14px 18px;border-radius:15px;box-shadow:0 10px 35px #0003;font-size:13px;font-weight:800}
+.cards{max-width:1020px;margin:-24px auto 0;position:relative;z-index:2;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{background:#fff;border:1px solid #e4eaff;border-radius:17px;padding:19px 12px;text-align:center;box-shadow:0 10px 28px #172e6910}.feature strong{display:block;font-size:20px;color:#1243b8;margin-bottom:5px}.feature small{color:var(--muted)}
+section.content{max-width:1180px;margin:auto;padding:72px 22px}.section-head{text-align:center;max-width:700px;margin:0 auto 30px}.eyebrow{font-size:12px;font-weight:950;letter-spacing:2px;color:#ef233c}.section-head h2{font-size:clamp(28px,4vw,38px);margin:10px 0;color:var(--ink)}.section-head p{color:var(--muted);line-height:1.7}
+.about-box{background:#fff;border:1px solid #e2e9ff;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.about-box h3{font-size:25px;margin-top:0}.about-box p{line-height:1.8;color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check{padding:15px;border-radius:13px;background:#f2f6ff;font-weight:800}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.media-card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #e0e8ff;box-shadow:0 10px 25px #172e690c}.media-frame{aspect-ratio:16/10;background:#e8edfa;display:grid;place-items:center;overflow:hidden}.media-frame img,.media-frame video{width:100%;height:100%;object-fit:cover}.media-empty{padding:15px;text-align:center;color:#52648e;line-height:1.7}.media-card h3{font-size:16px;margin:15px 16px 6px}.media-card p{margin:0 16px 17px;color:var(--muted);font-size:13px}.hidden{display:none!important}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-card{background:#fff;border:1px solid #e2e9ff;padding:22px;border-radius:18px;text-align:center}.contact-card .icon{font-size:30px}.contact-card h3{margin:10px 0}.contact-card p{color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+footer{background:#07143d;color:#e5ebff;text-align:center;padding:28px 20px;font-size:13px}footer strong{color:#fff}
+@media(max-width:850px){.nav{align-items:flex-start;flex-direction:column}.nav nav{width:100%;gap:4px}nav a{padding:10px}.hero-inner{min-height:100vh;padding-top:45px}.hero-photo{display:none}.cards{grid-template-columns:1fr}.about-box{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.gallery{grid-template-columns:1fr}h1{letter-spacing:-1px}.hero-inner{padding-bottom:65px}.hero-photo{display:none}.checks{grid-template-columns:1fr 1fr}.brand{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="topline">🌐 Rayhan's English Academy | IELTS & Spoken English</div>
+<div class="notice">🎓 IELTS • Spoken English • Basic English — Admission in progress</div>
+<header><div class="nav">
+<a class="brand" href="#home"><span class="logo"><img src="001.png" alt="Academy logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback" style="display:none">🎓</span></span><span>Rayhan's English Academy</span></a>
+<nav aria-label="Main navigation">
+<a href="#about" data-about-link>About Us</a>
+<a class="wa" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+<a href="#photos" data-section="photos">Photo</a>
+<a href="#videos" data-section="videos">Video</a>
+<a href="mailto:" data-email-link>Email</a>
+</nav></div></header>
+<main id="home">
+<section class="hero"><div class="hero-inner">
+<div class="hero-copy"><span class="pill">✨ Admission to new batch is underway</span>
+<h1>Rayhan's English Academy <span>IELTS &amp; Spoken English</span></h1>
+<p>Learn from Basic English to Advanced step by step. Build the confidence to speak English.</p>
+<div class="actions"><a class="btn btn-red" href="#contact">💬 Learn about admissions</a><a class="btn btn-outline" href="#courses">📚 View Course</a></div>
+</div>
+
+</div></section>
+<div class="cards" id="courses"><div class="feature"><strong>IELTS</strong><small>Preparation for the exam</small></div><div class="feature"><strong>Spoken English</strong><small>Practice of speaking</small></div><div class="feature"><strong>Basic to Advanced</strong><small>Step-by-step learning</small></div></div>
+<section class="content" id="about"><div class="section-head"><span class="eyebrow">ABOUT US</span><h2>Your English Learning Partner</h2><p>A supportive environment for learning English through simple explanations, regular practice, and building confidence.</p></div>
+<div class="about-box"><div><h3>Build your confidence in English</h3><p>Rayhan's English Academy supports learners on their journey from Basic English to IELTS preparation. Learn step by step, practise regularly, and keep improving.</p><a class="btn btn-red" href="#about" data-about-file>📖 Read More About Us</a></div><div class="checks"><div class="check">✓ IELTS Preparation</div><div class="check">✓ Spoken English</div><div class="check">✓ Basic Grammar</div><div class="check">✓ Friendly Learning</div></div></div>
+</section>
+<section class="content" id="photos"><div class="section-head"><span class="eyebrow">PHOTO GALLERY</span><h2>Academy Photos</h2><p>Click Photo in the menu to view the gallery. Add your images using the filenames below.</p></div><div class="gallery" id="photoGallery"></div></section>
+<section class="content" id="videos"><div class="section-head"><span class="eyebrow">VIDEO LIBRARY</span><h2>Watch Our Videos</h2><p>Videos appear in order from Video 1 to Video 5. Add MP4 files to this folder to play them here.</p></div><div class="gallery" id="videoGallery"></div></section>
+<section class="content" id="contact"><div class="section-head"><span class="eyebrow">GET IN TOUCH</span><h2>Contact the Academy</h2><p>Contact us for admission details and course information.</p></div><div class="contact-grid"><div class="contact-card"><div class="icon">💬</div><h3>WhatsApp</h3><p>Chat with the academy directly.</p><a class="btn btn-red" id="waContact" href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div><div class="contact-card"><div class="icon">✉️</div><h3>Email</h3><p id="emailText">Set your email address in the HTML file.</p><a class="btn btn-outline" style="color:#10245f;border-color:#b9c7ee" id="emailContact" href="mailto:">Send Email</a></div><div class="contact-card"><div class="icon">📚</div><h3>Courses</h3><p>IELTS, Spoken English and Basic English.</p><a class="btn btn-outline" style="color:#10245f;border-color:#b9c7ee" href="#courses">View Courses</a></div></div></section>
+</main>
+<footer><strong>Rayhan's English Academy</strong><br>IELTS • Spoken English • Basic to Advanced<br>© <span id="year"></span> All rights reserved.</footer>
+<script>
+// EDIT THESE DETAILS before publishing:
+const WHATSAPP_NUMBER = ""; // Example: 8801XXXXXXXXX (country code, no + or spaces)
+const EMAIL_ADDRESS = "";   // Example: youracademy@example.com
+const ABOUT_FILE = "#about"; // About Us section is included in this same HTML file.
+const PHOTO_FILES = ["Photo 1.jpg","Photo 2.jpg","Photo 3.jpg","Photo 4.jpg","Photo 5.jpg"];
+const VIDEO_FILES = ["Video 1.mp4","Video 2.mp4","Video 3.mp4","Video 4.mp4","Video 5.mp4"];
+
+document.querySelectorAll("[data-about-link], [data-about-file]").forEach(a=>a.href=ABOUT_FILE);
+document.querySelectorAll('a[href="https://wa.me/"], #waContact').forEach(a=>{
+  if(WHATSAPP_NUMBER) a.href="https://wa.me/"+WHATSAPP_NUMBER;
+  else a.href="https://wa.me/";
+});
+document.querySelectorAll("[data-email-link], #emailContact").forEach(a=>a.href=EMAIL_ADDRESS?"mailto:"+EMAIL_ADDRESS:"mailto:");
+document.getElementById("emailText").textContent=EMAIL_ADDRESS||"Add your email address in the HTML settings.";
+document.getElementById("year").textContent=new Date().getFullYear();
+
+const photoGallery=document.getElementById("photoGallery");
+PHOTO_FILES.forEach((file,i)=>{
+ const card=document.createElement("article");card.className="media-card";
+ card.innerHTML=`<div class="media-frame"><img src="${file}" alt="Academy photo ${i+1}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="media-empty" style="display:none">🖼️<br><b>Photo ${i+1}</b><br>Add file: <code>${file}</code></div></div><h3>Photo ${i+1}</h3><p>Rayhan's English Academy</p>`;
+ photoGallery.appendChild(card);
+});
+const videoGallery=document.getElementById("videoGallery");
+VIDEO_FILES.forEach((file,i)=>{
+ const card=document.createElement("article");card.className="media-card";
+ card.innerHTML=`<div class="media-frame"><video controls preload="metadata" aria-label="Video ${i+1}"><source src="${file}" type="video/mp4">Your browser does not support video playback.</video></div><h3>Video ${i+1}</h3><p>Rayhan's English Academy</p>`;
+ videoGallery.appendChild(card);
+});
+</script>
+</body></html>
